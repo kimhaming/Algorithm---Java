@@ -18,10 +18,12 @@ public class S120956 {
 
     public static int solution(String[] babbling) {
         return (int) java.util.Arrays.stream(babbling)
-                .filter(S120956::isValidBabbling)
+                .filter(S120956::isValidBabbling)   //  .filter(클래스명::메서드명)
                 .count();
     }
 
+    // babbling 배열에 있는 각 문자열 요소를 매개변수 String word로 본다.
+    // isValidBabbling() 메서드: 각 문자열이 유효한지 검사하는 메서드
     private static boolean isValidBabbling(String word) {
         String pattern = String.join("|", PATTERNS);
         String replacedWord = word.replaceAll(pattern, "");
@@ -41,7 +43,7 @@ public class S120956 {
 //        return result;
 //    }
 //}
-/**
- * 오류: 1이 출력되어야 하는데 4가 출력된다.
+/** 오류:
+ *  1이 출력되어야 하는데 4가 출력된다.
  *  3이 출력되어야 하는데 8이 출력된다.
  */

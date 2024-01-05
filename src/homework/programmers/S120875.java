@@ -9,8 +9,8 @@ public class S120875 {
 
     public static int solution(int[][] dots) {
 
-//        int x1, x2, x3, x4 = 0;
-//        int y1, y2, y3, y4 = 0;
+        int x1, x2, x3, x4 = 0;
+        int y1, y2, y3, y4 = 0;
 
         for (int i = 0; i < dots.length; i++) {   // 길이가 4인 이차원 배열을 돌면서
             for (int j = i + 1; j < dots.length; j++) { // 중복되지 않으려고 위에서 x1이 정해지면 x2는 최소 x1의 다음 순서이기 때문에

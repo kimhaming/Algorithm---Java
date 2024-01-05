@@ -2,7 +2,6 @@ package homework.programmers;
 
 public class S181916 {
     public static void main(String[] args) {
-        int a, b, c, d;
         System.out.println(solution(2, 2, 5, 6));
     }
 
